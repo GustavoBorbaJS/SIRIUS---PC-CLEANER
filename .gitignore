@@ -1,0 +1,30 @@
+## Arquivos compilados
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.runtimeconfig.json
+*.deps.json
+
+## Pastas de build
+Release/
+Debug/
+publish/
+installer/
+
+## Configurações do usuário
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+## Arquivos de licença local
+license.key
+*.log
+debug.log
+
+## Arquivos do Visual Studio
+.vs/
+*.csproj.user
+*.csproj.user.*
