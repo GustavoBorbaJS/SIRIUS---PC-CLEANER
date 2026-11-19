@@ -19,12 +19,12 @@ installer/
 *.suo
 *.userprefs
 
-## Arquivos de licença local
-license.key
+## Logs
 *.log
-debug.log
 
 ## Arquivos do Visual Studio
 .vs/
 *.csproj.user
 *.csproj.user.*
+## Resultados de testes
+TestResults/
