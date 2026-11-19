@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <RootNamespace>SiriusCleaner</RootNamespace>
+    <AssemblyName>SiriusCleaner</AssemblyName>
+    <ApplicationIcon>Assets\shield.ico</ApplicationIcon>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <SatelliteResourceLanguages>pt-BR</SatelliteResourceLanguages>
+
+    <Product>Sirius Cleaner</Product>
+    <Description>Limpador de arquivos inúteis e ferramenta de manutenção do Windows que preserva serviços e aplicações em uso.</Description>
+    <Version>2.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="8.0.0" />
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="tests\**" />
+    <None Remove="tests\**" />
+    <InternalsVisibleTo Include="SiriusCleaner.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\shield.ico" LogicalName="SiriusCleaner.shield.ico" />
+  </ItemGroup>
+
+</Project>
